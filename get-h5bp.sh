@@ -5,10 +5,12 @@ wget https://github.com/h5bp/html5-boilerplate/archive/master.zip -O h5bp-master
 
 # inflate h5bp
 unzip h5bp-master.zip
+mkdir main/static
 mv html5-boilerplate-master/* main/static/
 rm -rf html5-boilerplate-master
 
 # move index.html into templates/
+mkdir main/templates
 mv main/static/index.html main/templates/
 
 # setup a virtualenv at venv/
