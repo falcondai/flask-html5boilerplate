@@ -11,7 +11,7 @@ rm -rf html5-boilerplate-master
 
 # move index.html into templates/
 mkdir main/templates
-mv main/static/index.html main/templates/
+mv main/static/*.html main/templates/
 
 # setup a virtualenv at venv/
 virtualenv venv/
